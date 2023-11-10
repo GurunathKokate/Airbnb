@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.7s ease;
+}
+
+
+.main{
+    width: 98.7vw;
+    /* height: 100vh; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+
+}
+
+.sub{
+width: 96.5%;
+padding-left: 10px;
+/* border: 2px solid yellow; */
+
+}
+
+.navBar{
+    /* border: 2px solid blue; */
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    gap: 307px;
+    align-items: center;
+    top: 0px;
+    background-color:white ;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.first{
+    /* border: 2px solid rgb(211, 81, 102); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff385c;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.first img{
+    height: 45px;
+    width: 45px;
+}
+
+
+.second{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.692);
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.719);
+    cursor: pointer;
+}
+.second p{
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+.second p:hover{
+    color: #ff385c;
+    
+}
+.second p:first-child{
+    padding-left: 50px;
+    font-weight: 700;
+}
+
+.second p:nth-child(2){
+    border-left: 2px solid rgba(0, 0, 0, 0.418);
+    border-right: 2px solid rgba(0, 0, 0, 0.418);
+    font-weight: 700;
+}
+.searchIcon{
+    padding: 15px 15px;
+    margin: 10px;
+    background-color: #ff385c;
+    border-radius: 50%;
+}
+
+.third{
+    /* border: 2px solid orangered; */
+    display:flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.third p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.third p:hover{
+    color: #ff385c;
+}
+
+
+.iconProfile{
+    background-color: white;
+    padding-left: 10px;
+}
+
+.profile{
+    border: none;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    height: 60px;
+    width: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.profile svg:first-child{
+
+    margin-left: 20px;
+}
+
+
+.scrollBar{
+    /* position: -webkit-sticky; */
+    /* position: static; */
+    /* border: 2px solid rebeccapurple; */
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 82px;
+    top: 50px;
+    flex-wrap: wrap;
+
+}
+
+.subScroll{
+    /* border: 4px solid teal; */
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between
+}
+
+.subScroll img{
+    height: 40px;
+    width: 40px;
+}
+
+.subScroll img:hover{
+    transform: scale(1.2);
+    
+}
+
+.subScroll div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.subScroll div:nth-last-child(3)
+{
+    border: 2px solid rgba(0, 0, 0, 0.205);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.subScroll div:nth-last-child(2)
+{
+    border: 2px solid rgba(0, 0, 0, 0.164);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 16px;
+}
+
+.subScroll div:last-child{
+    border: 2px solid rgba(0, 0, 0, 0.164);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 16px;
+}
+
+.subScroll div:last-child lable{
+    height: 40px;
+    width: 40px;
+}
+
+.subScroll p:hover{
+    transform: scale(1.2);
+    color: rgb(35, 154, 223);
+    
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: -1;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: -1;
+  }
+  
+  input:checked + .slider {
+    background-color: #010102;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+.homeMain{
+    top: 10px;
+    width: 100%;
+ 
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.card img{
+    height: 360px;
+    width: 380px;
+    border-radius: 18px;
+    
+}
+
+.card img:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #3f1f255e;
+}
+
+.card p{
+    font-size: 23px;
+    font-weight: 500;
+    color: #010102cc;
+}
+
+.card pre{
+    font-size: 18px;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+
